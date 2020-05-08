@@ -1,8 +1,8 @@
 class WhatToPlay:
 
     # Constructor of WhatToPlay class
-    def __init__(self):
-        raise NotImplementedError
+    def __init__(self, available_games):
+        self.available_games = available_games
 
     # Getting available games in Xbox Game Pass
     def get_xgp_games(self):
@@ -15,7 +15,7 @@ class WhatToPlay:
     # Rating a game I played
     def rate_game(self):
         raise NotImplementedError
-    
+
     # Recommend which game should I play
     def recommend_me_sth(self):
         raise NotImplementedError
