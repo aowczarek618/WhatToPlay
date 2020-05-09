@@ -1,3 +1,4 @@
+import Game
 import WhatToPlay
 
 
@@ -8,10 +9,12 @@ def write_to_file(my_dict):
 
 
 def main():
-    what_to_play = WhatToPlay.WhatToPlay()
-    # print(what_to_play.check_metascore("The-Witcher-3-Wild-Hunt"))
-    recommended_games = (what_to_play.recommend_me_sth())
-    write_to_file(recommended_games)
+    # games_list = WhatToPlay.get_xgp_games()
+    # available_games = []
+    # for game in games_list:
+    #     available_games.append(Game.Game(game))
+    print(Game.Game("Red-Dead-Redemption-2"))
+    # print(available_games)
 
 
 if __name__ == '__main__':
