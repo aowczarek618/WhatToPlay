@@ -45,4 +45,5 @@ def get_xgp_games(old_gamenames, rated_gamenames):
         print(f'Looking for info about game number: {i}')
         games_set.add(Game.Game(game))
         i += 1
+    games_to_delete += rated_gamenames
     return games_set, games_to_delete

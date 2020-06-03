@@ -20,16 +20,17 @@ def create_db(games_set, my_taste):
 
 
 def del_unavailable_games_from_db(database, games_to_delete):
-    """Delete games from database which are currently unavailable in Xbox Game Pass subscription"""
+    """Delete games from database which are currently unavailable in Xbox Game Pass subscription
+    or are currently rated."""
     for game in games_to_delete:
-        database.drop(database[database.name == game].index)
+        database.drop(database[database['Name'] == game].index, inplace=True)
     return database
 
 
 def rated_games_list():
     """Create rated games list"""
+    rated_games = []
     with open('rated_games', 'r') as f:
-        rated_games = []
         for line in f:
             game_name = line.rstrip().split(':')[0]
             rated_games.append(game_name)
@@ -52,7 +53,9 @@ def get_old_gamenames():
 def main():
     """Main function"""
     old_gamenames = get_old_gamenames()
-    games_set, games_to_delete = WhatToPlay.get_xgp_games(old_gamenames, rated_games_list())
+    rated_games = rated_games_list()
+
+    games_set, games_to_delete = WhatToPlay.get_xgp_games(old_gamenames, rated_games)
     my_taste = taste_meter.taste_meter('rated_games')
     db = create_db(games_set, my_taste)
     db = del_unavailable_games_from_db(db, games_to_delete)

@@ -27,7 +27,6 @@ class Game:
         headers = {
             'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36"}
         page = requests.get(metacritic_url, headers=headers)
-        print(f'Page status code: {page.status_code}')
         if page.status_code == 429:
             time.sleep(10)
             page = requests.get(metacritic_url, headers=headers)
