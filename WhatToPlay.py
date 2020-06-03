@@ -1,14 +1,17 @@
 import re
+import time
 
 import Game
 import requests
 from bs4 import BeautifulSoup
 
 
-# Getting available games in Xbox Game Pass
-def get_xgp_games():
+def get_xgp_games(old_gamenames, rated_gamenames):
+    """Getting available Xbox Game Pass game without games which are currently in
+    project database file"""
     page_number = 1
     gamenames_set = set()
+    games_to_delete = old_gamenames.copy()
 
     while True:
         true_achievements_url = f"https://www.trueachievements.com/xbox-game-pass/games?page={page_number}"
@@ -23,6 +26,12 @@ def get_xgp_games():
             for a in site_elem.find_all('a', href=True):
                 game_name = a['href']
                 game_name = game_name.split('/')
+                if game_name[2] in old_gamenames + rated_gamenames:
+                    try:
+                        games_to_delete.remove(f"{game_name[2]}")
+                    except ValueError:
+                        pass
+                    continue
                 gamenames_set.add(game_name[2])
                 """
                 # eg. game_name = ['', 'game', 'Life-Is-Strange-2', 'achievements]
@@ -30,11 +39,10 @@ def get_xgp_games():
                 """
         page_number += 1
     games_set = set()
-    print(len(gamenames_set))
+    print(f'Number of all new available games: {len(gamenames_set)}')
     i = 1
     for game in gamenames_set:
-        print(i)
+        print(f'Looking for info about game number: {i}')
         games_set.add(Game.Game(game))
         i += 1
-    return games_set
-
+    return games_set, games_to_delete

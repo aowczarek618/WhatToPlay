@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a6baf63-2f09-41aa-8759-bbcdcb2fb1b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rated_games" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taste_meter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xbox_database" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WhatToPlay.py" beforeDir="false" afterPath="$PROJECT_DIR$/WhatToPlay.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommended_games.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xbox_database" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -116,22 +115,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1828" height="275" key="GridCell.Tab.0.bottom" timestamp="1589436594628">
+    <state x="315" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1591080439170">
       <screen x="69" y="27" width="1851" height="1053" />
     </state>
-    <state width="1828" height="275" key="GridCell.Tab.0.bottom/69.27.1851.1053@69.27.1851.1053" timestamp="1589436594628" />
-    <state width="1828" height="275" key="GridCell.Tab.0.center" timestamp="1589436594628">
+    <state x="315" y="310" width="424" height="484" key="FileChooserDialogImpl/69.27.1851.1053@69.27.1851.1053" timestamp="1591080439170" />
+    <state width="1828" height="273" key="GridCell.Tab.0.bottom" timestamp="1591218954634">
       <screen x="69" y="27" width="1851" height="1053" />
     </state>
-    <state width="1828" height="275" key="GridCell.Tab.0.center/69.27.1851.1053@69.27.1851.1053" timestamp="1589436594628" />
-    <state width="1828" height="275" key="GridCell.Tab.0.left" timestamp="1589436594628">
+    <state width="1828" height="273" key="GridCell.Tab.0.bottom/69.27.1851.1053@69.27.1851.1053" timestamp="1591218954634" />
+    <state width="1828" height="273" key="GridCell.Tab.0.center" timestamp="1591218954633">
       <screen x="69" y="27" width="1851" height="1053" />
     </state>
-    <state width="1828" height="275" key="GridCell.Tab.0.left/69.27.1851.1053@69.27.1851.1053" timestamp="1589436594628" />
-    <state width="1828" height="275" key="GridCell.Tab.0.right" timestamp="1589436594628">
+    <state width="1828" height="273" key="GridCell.Tab.0.center/69.27.1851.1053@69.27.1851.1053" timestamp="1591218954633" />
+    <state width="1828" height="273" key="GridCell.Tab.0.left" timestamp="1591218954633">
       <screen x="69" y="27" width="1851" height="1053" />
     </state>
-    <state width="1828" height="275" key="GridCell.Tab.0.right/69.27.1851.1053@69.27.1851.1053" timestamp="1589436594628" />
+    <state width="1828" height="273" key="GridCell.Tab.0.left/69.27.1851.1053@69.27.1851.1053" timestamp="1591218954633" />
+    <state width="1828" height="273" key="GridCell.Tab.0.right" timestamp="1591218954633">
+      <screen x="69" y="27" width="1851" height="1053" />
+    </state>
+    <state width="1828" height="273" key="GridCell.Tab.0.right/69.27.1851.1053@69.27.1851.1053" timestamp="1591218954633" />
     <state x="483" y="188" key="SettingsEditor" timestamp="1589092768948">
       <screen x="69" y="27" width="1851" height="1053" />
     </state>
