@@ -4,6 +4,7 @@ import Game
 # Compute my game taste meter
 def taste_meter(filename):
     taste_meter = {}
+    rate_weight = 3
     with open(filename, 'r') as f:
         for line in f:
             rated_game = line.rstrip().split(':')
@@ -12,12 +13,12 @@ def taste_meter(filename):
             game_developer = game.developer
             for genre in game_genres:
                 if genre not in taste_meter:
-                    taste_meter[genre] = int(rated_game[1])
+                    taste_meter[genre] = rate_weight * int(rated_game[1])
                 else:
-                    taste_meter[genre] += int(rated_game[1])
+                    taste_meter[genre] += rate_weight * int(rated_game[1])
 
             if game_developer not in taste_meter:
-                taste_meter[game_developer] = int(rated_game[1])
+                taste_meter[game_developer] = rate_weight * int(rated_game[1])
             else:
-                taste_meter[game_developer] += int(rated_game[1])
+                taste_meter[game_developer] += rate_weight * int(rated_game[1])
     return taste_meter

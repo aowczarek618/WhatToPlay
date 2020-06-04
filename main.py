@@ -63,7 +63,7 @@ def main():
     pd.set_option('display.max_rows', None)
     sorted_db = db.sort_values('MyScore', ascending=False)
     sorted_db = sorted_db[sorted_db['Metascore'] != 0]
-    print(sorted_db[['Name', 'MyScore']])
+    print(sorted_db[['Name', 'Metascore', 'MyScore']])
 
 
 if __name__ == '__main__':
