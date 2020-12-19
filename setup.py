@@ -15,6 +15,11 @@ setup(
     packages=find_packages(where='.'),
     python_requires='>=3.5, <4',
     install_requires=['requests', 'beautifulsoup4', 'pandas'],
+    entry_points={
+        "console_scripts": [
+            "xgp-reccomender=main:main",
+        ]
+    },
     project_urls={
         'Bug Reports': 'https://github.com/aowczarek618/xgp-reccomender/issues',
         'Source': 'https://github.com/aowczarek618/xgp-reccomender',

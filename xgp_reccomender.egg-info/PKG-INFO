@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xgp-reccomender
+Version: 1.0.0
+Summary: App searches for avaiable Xbox Game Pass games and helps to choose what to play next.
+Home-page: https://github.com/aowczarek618/xgp-reccomender
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/aowczarek618/xgp-reccomender/issues
+Project-URL: Source, https://github.com/aowczarek618/xgp-reccomender
+Description: # xgp-reccomender
+        App searches for avaiable Xbox Game Pass games and helps to choose what to play next.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
