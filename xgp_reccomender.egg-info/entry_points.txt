@@ -1,0 +1,3 @@
+[console_scripts]
+xgp-reccomender = main:main
+
