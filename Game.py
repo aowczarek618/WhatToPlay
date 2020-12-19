@@ -2,7 +2,6 @@ import re
 import time
 import logging
 import requests
-import WhatToPlay
 from bs4 import BeautifulSoup
 
 

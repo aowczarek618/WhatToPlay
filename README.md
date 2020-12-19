@@ -1,2 +1,2 @@
-# WhatToPlay
-App recommend me what to play on Xbox console via Xbox Game Pass.
+# xgp-reccomender
+App searches for avaiable Xbox Game Pass games and helps to choose what to play next.

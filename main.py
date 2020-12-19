@@ -1,10 +1,10 @@
-import WhatToPlay
+import xgp_reccomender
 
 
 def main():
     """Main function"""
-    what_to_play = WhatToPlay.WhatToPlay()
-    what_to_play.generate_html()
+    my_xgp_reccomender = xgp_reccomender.XgpReccomender()
+    my_xgp_reccomender.generate_html()
 
 
 if __name__ == '__main__':
