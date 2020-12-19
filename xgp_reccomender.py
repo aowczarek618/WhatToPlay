@@ -14,7 +14,7 @@ class XgpReccomender:
 
     def __init__(self):
         """Create database of all avaiable Xbox Game Pass games"""
-        self.my_taste = self.taste_meter(rate_weight=3)
+        self.my_taste = self.taste_meter(rate_weight=1)
 
         with open('xbox_database', 'w') as f:
             if os.stat('xbox_database').st_size == 0:
