@@ -1,6 +1,10 @@
 README.md
 setup.cfg
 setup.py
+xgp_reccomender/Game.py
+xgp_reccomender/__init__.py
+xgp_reccomender/main.py
+xgp_reccomender/xgp_reccomender.py
 xgp_reccomender.egg-info/PKG-INFO
 xgp_reccomender.egg-info/SOURCES.txt
 xgp_reccomender.egg-info/dependency_links.txt
