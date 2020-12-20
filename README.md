@@ -5,7 +5,7 @@ App searches for avaiable Xbox Game Pass games and helps to choose what to play 
 > pip3 install xgp-reccomender
 
 ## Usage
-> python3 /path/to/script/main.py
+> xgp-reccomender
 
 Rating games is done via [rated_games](rated_games). 1 is for liked games and -1 is the opposite. You can type whatever integer you want, but I reccomend to stick with -1, 1 values.
 

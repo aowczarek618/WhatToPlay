@@ -7,7 +7,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='xgp-reccomender',
-    version='1.0.2',
+    version='2.0.0',
     description='App searches for avaiable Xbox Game Pass games and helps to choose what to play next.',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -15,9 +15,10 @@ setup(
     packages=find_packages(where='.'),
     python_requires='>=3.5, <4',
     install_requires=['requests', 'beautifulsoup4', 'pandas'],
+    include_package_data=True,
     entry_points={
         "console_scripts": [
-            "xgp-reccomender=xgp_reccomender.main:main",
+            "xgp-reccomender = xgp_reccomender.main:main",
         ]
     },
     project_urls={

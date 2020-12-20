@@ -1,9 +1,9 @@
 import re
 import time
 import logging
-import Game
 import requests
 from bs4 import BeautifulSoup
+from xgp_reccomender.Game import Game
 import pandas
 import os
 
@@ -50,7 +50,7 @@ class XgpReccomender:
         logger.info(f'Number of all available games: {len(gamenames_set)}...')
         for count, game in enumerate(gamenames_set):
             logger.info(f'Looking for info about game number: {count}...')
-            games_set.add(Game.Game(name=game, my_taste=self.my_taste))
+            games_set.add(Game(name=game, my_taste=self.my_taste))
         return games_set
 
     @staticmethod
@@ -72,7 +72,7 @@ class XgpReccomender:
         with open('rated_games', 'r') as f:
             for line in f:
                 game_name, rating = line.rstrip().split(':')
-                game = Game.Game(name=game_name, my_taste=None)
+                game = Game(name=game_name, my_taste=None)
                 for genre in game.genres:
                     if genre not in taste_meter:
                         taste_meter[genre] = rate_weight * int(rating)
